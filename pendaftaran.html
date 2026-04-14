@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran SPMB 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background">
+  <div class="slide"></div>
+  <div class="slide"></div>
+  <div class="slide"></div>
+  <div class="slide"></div>
+</div>
+  
+<div class="form-container">
+
+  <h1>Form Pendaftaran SPMB</h1>
+  <p class="sub">Isi data dengan benar sebelum dikirim</p>
+
+  <form id="formSPMB">
+
+    <div class="grid">
+
+      <input type="text" id="nama" placeholder="Nama Lengkap" required>
+      <input type="text" id="nik" placeholder="NIK / KTP" required>
+      <input type="text" id="asal" placeholder="Asal Sekolah" required>
+      <input type="text" id="hp" placeholder="No HP Orang Tua" required>
+
+    </div>
+
+    <div class="upload-box">
+
+      <label>Foto 3x4</label>
+      <input type="file" id="foto34" accept="image/*" required>
+      <img id="preview34" class="preview">
+
+      <label>Foto 4x6</label>
+      <input type="file" id="foto46" accept="image/*" required>
+      <img id="preview46" class="preview">
+
+    </div>
+
+    <button type="submit">Kirim Pendaftaran</button>
+
+  </form>
+
+ 
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
